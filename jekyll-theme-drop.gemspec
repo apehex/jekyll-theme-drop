@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "TODO: Write a short summary, because Rubygems requires one."
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-  spec.license       = "MIT"
+  spec.license       = "CC-BY-4.0"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
 
