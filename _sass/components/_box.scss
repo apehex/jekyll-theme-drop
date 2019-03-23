@@ -1,0 +1,151 @@
+/* Box */
+
+.box {
+    position: relative;
+    margin-top: 9em;
+    margin-bottom: 0;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -9em;
+        left: 50%;
+        height: 9em;
+        border-left: solid 1px #fff;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        width: 90px;
+        height: 66px;
+        position: absolute;
+        left: 50%;
+        top: -4.5em;
+        margin-left: -45px;
+        margin-top: -33px;
+        background: url('images/arrow.svg') no-repeat;
+    }
+
+    :last-child {
+        margin-bottom: 0;
+    }
+
+    &.style1 {
+        background: #fff;
+        padding: 3em;
+
+        .image {
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            background: #152E33;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: auto;
+            }
+        }
+
+        .inner {
+            > :last-child {
+                margin: 0;
+            }
+        }
+
+        &.right {
+            .image {
+                left: 0;
+
+                img {
+                    right: 0;
+                }
+            }
+
+            .inner {
+                margin-left: 50%;
+                padding-left: 3em;
+            }
+        }
+
+        &.left {
+            .image {
+                right: 0;
+
+                img {
+                    left: 0;
+                }
+            }
+
+            .inner {
+                margin-right: 50%;
+                padding-right: 3em;
+            }
+        }
+    }
+
+    &.style2 {
+        text-align: center;
+
+        header {
+            display: inline-block;
+            background: #fff;
+            padding: 2em 3em 2em 3em;
+            margin: 0;
+
+            p {
+                padding: 0;
+            }
+        }
+
+        .inner {
+            position: relative;
+            padding: 40px 0 0px 0;
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                height: 100%;
+                border-left: solid 1px #fff;
+            }
+
+            .row {
+                position: relative;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 20px;
+                    width: calc(100% - 40px);
+                    border-bottom: solid 1px #fff;
+                }
+            }
+
+            .image {
+                position: relative;
+                z-index: 1;
+                padding: 20px;
+            }
+        }
+    }
+
+    &.style3 {
+        background: #fff;
+        padding: 3em;
+
+        header {
+            text-align: center;
+        }
+    }
+}

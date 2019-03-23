@@ -1,0 +1,15 @@
+/* Container */
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1140px;
+
+    @include breakpoint('<=wide') {
+        width: 960px;
+    }
+
+    @include breakpoint('<=normal') {
+        width: 95%;
+    }
+}
