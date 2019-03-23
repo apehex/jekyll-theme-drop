@@ -1,24 +1,22 @@
 <!DOCTYPE HTML>
 <!--
-	Drop by apehex
-	https://github.com/apehex
-	Free for personal and commercial use under the CCA 4.0 license
+    Drop by apehex
+    https://github.com/apehex
+    Free for personal and commercial use under the CCA 4.0 license
 -->
 <html>
-	
-	{% include head.html %}
+    
+    {% include head.html %}
 
-	<body class="is-preload">
+    <body class="is-preload">
 
-		{% include header.html %}
+        {% include header.html %}
 
-		{% include banner.html %}
+        {{ content }}
 
-		{{ content }}
+        {% include footer.html %}
 
-		{% include footer.html %}
+        {% include scripts.html %}
 
-		{% include scripts.html %}
-
-	</body>
+    </body>
 </html>
