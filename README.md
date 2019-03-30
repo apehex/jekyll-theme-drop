@@ -2,7 +2,7 @@
 
 A vertical scrolling template for Jekyll, with a falling drop theme.
 
-You can preview the theme [here](https://apehex.github.io/jekyll-theme-drop
+You can preview the theme [here](https://apehex.github.io/jekyll-theme-drop)
 
 ![Drop Theme](assets/images/screenshot.jpg "Drop Theme")
 
