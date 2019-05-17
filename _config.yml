@@ -26,6 +26,9 @@ slack_url: https://github.com/apehex
 twitter_url: https://github.com/apehex
 
 # Collections
+collections:
+  drops:
+    output: true
 
 # Build settings
 markdown: kramdown
