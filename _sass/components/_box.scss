@@ -148,4 +148,70 @@
             text-align: center;
         }
     }
+
+
+    &.style4 {
+        background: #fff;
+        padding: 0;
+
+        .upper, .lower {
+            display: block;
+            position: relative;
+            left: 0;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            padding: 2em;
+            margin: 0;
+        }
+
+        .upper {
+            top: 0;
+            /* background-color: _palette(accent); */
+            background-image: url('../images/bouncing.svg');
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            background-position: bottom -120px left -240px;
+            background-size: auto 240px;
+        }
+
+        .lower {
+            /* background-color: _palette(bg); */
+            background-image: url('../images/bouncing.svg');
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            background-position: top -120px left -240px;
+            background-size: auto 240px;
+        }
+
+        &.right {
+            .image {
+                left: 0;
+
+                img {
+                    right: 0;
+                }
+            }
+
+            .inner {
+                margin-left: 50%;
+                padding-left: 3em;
+            }
+        }
+
+        &.left {
+            .image {
+                right: 0;
+
+                img {
+                    left: 0;
+                }
+            }
+
+            .inner {
+                margin-right: 50%;
+                padding-right: 3em;
+            }
+        }
+    }
 }
