@@ -154,6 +154,22 @@
         background: #fff;
         padding: 0;
 
+        svg {
+            position: absolute;
+            z-index: 0;
+        }
+
+        h2 {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+        }
+
+        p {
+            position: absolute;
+            z-index: 10;
+        }
+
         .upper, .lower {
             display: block;
             position: relative;
@@ -165,68 +181,48 @@
         }
 
         .upper {
+            color: _palette(bg);
             background-color: _palette(accent);
 
             svg {
-                position: absolute;
                 bottom: 0;
-                left: 0;
-                z-index: 0;
-            }
-
-            .inner {
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 10;
             }
         }
 
         .lower{
+            color: _palette(accent);
             background-color: _palette(bg);
 
             svg {
-                position: absolute;
                 top: 0;
-                left: 0;
-                z-index: 0;
-            }
-
-            .inner {
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 10;
             }
         }
 
         &.right {
-            .image {
+            svg {
                 left: 0;
-
-                img {
-                    right: 0;
-                }
             }
 
-            .inner {
-                margin-left: 50%;
-                padding-left: 3em;
+            h2 {
+                left: 0;
+            }
+
+            p {
+                right: 0;
             }
         }
 
         &.left {
-            .image {
+            svg {
                 right: 0;
-
-                img {
-                    left: 0;
-                }
             }
 
-            .inner {
-                margin-right: 50%;
-                padding-right: 3em;
+            h2 {
+                right: 0;
+            }
+
+            p {
+                left: 0;
             }
         }
     }
