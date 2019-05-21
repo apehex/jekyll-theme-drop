@@ -7,13 +7,19 @@ subtitle: by apehex
 <article class="container box style4 right">
     <a href="{{ drop.url }}">
         <div class="upper">
-            <header>
-                <h2>{{ drop.name }}</h2>
-            </header>
-            {{ drop.drop | markdownify }}
+            {% include bouncing.svg width="360px" height="60px" view-box="220 0 140 60" fill="#182d3a" opacity="1" %}
+            <div class="inner">
+                <header>
+                    <h2>{{ drop.name }}</h2>
+                </header>
+                {{ drop.drop | markdownify }}
+            </div>
         </div>
         <div class="lower">
-            {{ drop.water | markdownify }}
+            {% include bouncing.svg width="360px" height="60px" view-box="220 60 140 60" fill="#00ffff" opacity="1" %}
+            <div class="inner">
+                {{ drop.water | markdownify }}
+            </div>
         </div>
     </a>
 </article>

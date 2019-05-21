@@ -157,7 +157,6 @@
         .upper, .lower {
             display: block;
             position: relative;
-            left: 0;
             width: 100%;
             height: auto;
             overflow: hidden;
@@ -166,22 +165,39 @@
         }
 
         .upper {
-            top: 0;
-            /* background-color: _palette(accent); */
-            background-image: url('../images/bouncing.svg');
-            background-repeat: no-repeat;
-            background-origin: border-box;
-            background-position: bottom -120px left -240px;
-            background-size: auto 240px;
+            background-color: _palette(accent);
+
+            svg {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 0;
+            }
+
+            .inner {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10;
+            }
         }
 
-        .lower {
-            /* background-color: _palette(bg); */
-            background-image: url('../images/bouncing.svg');
-            background-repeat: no-repeat;
-            background-origin: border-box;
-            background-position: top -120px left -240px;
-            background-size: auto 240px;
+        .lower{
+            background-color: _palette(bg);
+
+            svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+            }
+
+            .inner {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10;
+            }
         }
 
         &.right {
