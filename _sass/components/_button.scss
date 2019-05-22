@@ -11,7 +11,7 @@ button,
     display: inline-block;
     border: 0;
     background: #35b88f;
-    color: #fff;
+    color: _palette(accent);
     text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
     cursor: pointer;
     text-decoration: none;
@@ -22,24 +22,24 @@ button,
     font-weight: 400;
 
     &:hover {
-        background: #45c89f;
+        background: _palette(accent-light);
     }
 
     &.style2 {
-        color: #3a3939;
+        color: _palette(accent);
         background: #fff;
         box-shadow: inset 0 0 0 1px #fff;
 
         &:hover {
             background: rgba(255, 255, 255, 0.1);
-            color: #fff !important;
+            color: _palette(accent-light) !important;
             text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25) !important;
         }
     }
 
     &.style3 {
         background: none;
-        color: #3a3939;
+        color: _palette(accent);
         box-shadow: inset 0 0 0 1px #dad9d9;
 
         &:hover {

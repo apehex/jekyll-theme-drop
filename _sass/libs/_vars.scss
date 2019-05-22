@@ -19,12 +19,15 @@
 
 // Palette.
 	$palette: (
-		bg:			#182d3a,
-		bg-alt:		#f5f6f7,
-		fg:			#7f888f,
-		fg-bold:	#3d4449,
-		fg-light:	#9fa3a6,
-		border:		rgba(210,215,217,0.75),
-		border-bg:	rgba(230,235,237,0.75),
-		accent:		#00ffff
+		bg:				#182d3a,
+		bg-alt:			#f5f6f7,
+		bg-light:		#f8f8f8,
+		fg:				#7f888f,
+		fg-bold:		#3d4449,
+		fg-light:		#9fa3a6,
+		border:			rgba(210,215,217,0.75),
+		border-bg:		rgba(230,235,237,0.75),
+		border-light:	rgba(210,215,217,0.75),
+		accent:			#00ffff,
+		accent-light:	#OOffff
 	);

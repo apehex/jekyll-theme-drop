@@ -2,17 +2,17 @@
 
 #banner {
     position: relative;
-    color: #fff;
+    color: _palette(fg);
     text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
     text-align: center;
-    background: #35b88f url('images/banner.svg') bottom center no-repeat;
+    background: _palette(bg) url('images/banner.svg') bottom center no-repeat;
     padding: 5em 0 5em 0;
     margin: 0;
     background-size: 125% auto;
 
     .button {
-        color: #35b882;
-        text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
+        color: _palette(accent);
+        text-shadow: 0 0 0.5px _palette(bg-light);
     }
 
     header {
@@ -35,10 +35,10 @@
 
     a {
         color: inherit;
-        border-bottom-color: rgba(255, 255, 255, 0.5);
+        border-bottom-color: _palette(border);
 
         &:hover {
-            border-bottom-color: rgba(255, 255, 255, 0);
+            border-bottom-color: _palette(border-light);
         }
     }
 }

@@ -11,7 +11,7 @@
         }
 
     body {
-        background-color: #183026;
+        background-color: _palette(bg);
         background-image: url('images/overlay.png'), url('../images/bg-1.jpg');
         background-repeat: repeat, no-repeat;
         background-size: auto, cover;
@@ -22,7 +22,7 @@
         line-height: 1.75em;
         font-weight: 300;
         letter-spacing: 1px;
-        color: #3a3939;
+        color: _palette(bg);
         text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
         -webkit-text-stroke: 0.25px;
 
@@ -47,7 +47,7 @@
         line-height: 1.75em;
         font-weight: 300;
         letter-spacing: 1px;
-        color: #3a3939;
+        color: _palette(bg);
         text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
         -webkit-text-stroke: 0.25px;
     }
@@ -83,13 +83,13 @@
 
     a {
         @include vendor('transition', ('border-color 0.35s ease-in-out', 'color 0.35s ease-in-out'));
-        color: #35b88f;
+        color: _palette(accent);
         text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
         text-decoration: none;
         border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
 
         &:hover {
-            border-bottom-color: rgba(53, 184, 143, 0);
+            border-bottom-color: _palette(accent-light);
         }
     }
 

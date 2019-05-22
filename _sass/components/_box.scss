@@ -12,7 +12,7 @@
         top: -9em;
         left: 50%;
         height: 9em;
-        border-left: solid 1px #fff;
+        border-left: solid 1px _palette(accent);
     }
 
     &:before {
@@ -33,7 +33,7 @@
     }
 
     &.style1 {
-        background: #fff;
+        background: _palette(bg);
         padding: 3em;
 
         .image {
@@ -42,7 +42,7 @@
             top: 0;
             width: 50%;
             height: 100%;
-            background: #152E33;
+            background: _palette(bg);
             overflow: hidden;
 
             img {
@@ -95,7 +95,7 @@
 
         header {
             display: inline-block;
-            background: #fff;
+            background: _palette(bg);
             padding: 2em 3em 2em 3em;
             margin: 0;
 
@@ -115,7 +115,7 @@
                 top: 0;
                 left: 50%;
                 height: 100%;
-                border-left: solid 1px #fff;
+                border-left: solid 1px _palette(border);
             }
 
             .row {
@@ -128,7 +128,7 @@
                     top: 50%;
                     left: 20px;
                     width: calc(100% - 40px);
-                    border-bottom: solid 1px #fff;
+                    border-bottom: solid 1px _palette(border);
                 }
             }
 
@@ -141,7 +141,7 @@
     }
 
     &.style3 {
-        background: #fff;
+        background: _palette(bg);
         padding: 3em;
 
         header {
@@ -151,7 +151,7 @@
 
 
     &.style4 {
-        background: #fff;
+        background: _palette(bg);
         padding: 0;
 
         svg {

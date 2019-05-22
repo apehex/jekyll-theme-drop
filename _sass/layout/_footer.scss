@@ -2,7 +2,7 @@
 
 #footer {
     position: relative;
-    color: #fff;
+    color: _palette(fg);
     text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
     text-align: center;
     margin: 4.5em 0 0 0;
@@ -14,25 +14,25 @@
         top: -4.5em;
         left: 50%;
         height: 4.5em;
-        border-left: solid 1px #fff;
+        border-left: solid 1px _palette(border);
     }
 
     a {
-        color: #fff;
+        color: _palette(accent);
         text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
-        border-bottom-color: rgba(255, 255, 255, 0.5);
+        border-bottom-color: _palette(accent);
 
         &:hover {
-            color: #35b88f;
+            color: _palette(accent-light);
             text-shadow: 0 0 0.5px rgba(69, 200, 159, 0.25);
-            border-bottom-color: rgba(53, 184, 143, 0.5);
+            border-bottom-color: _palette(accent-light);
         }
     }
 
     .icons {
         padding: 0.75em 2em 0.75em 2em;
         border-radius: 3em;
-        border: solid 1px #fff;
+        border: solid 1px _palette(border);
         display: inline-block;
         margin: 0 0 3em 0;
     }
