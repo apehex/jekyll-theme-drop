@@ -12,17 +12,17 @@
 
     body {
         background-color: _palette(bg);
-        background-image: url('images/overlay.png'), url('../images/bg-1.jpg');
-        background-repeat: repeat, no-repeat;
+        background-image: linear-gradient(rgba(25, 45, 60, 0.6), rgba(25, 45, 60, 0.6)), url('../images/bg-1.jpg');
+        background-repeat: no-repeat, no-repeat;
         background-size: auto, cover;
-        background-position: top left, center 0;
+        background-position: center 0, center 0;
         background-attachment: fixed, fixed;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 18pt;
         line-height: 1.75em;
         font-weight: 300;
         letter-spacing: 1px;
-        color: _palette(bg);
+        color: _palette(fg);
         text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
         -webkit-text-stroke: 0.25px;
 
@@ -86,7 +86,7 @@
         color: _palette(accent);
         text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
         text-decoration: none;
-        border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
+        border-bottom: dotted 1px _palette(border);
 
         &:hover {
             border-bottom-color: _palette(accent-light);
@@ -107,12 +107,12 @@
 
     hr {
         border: 0;
-        border-top: solid 1px #dad9d9;
+        border-top: solid 1px _palette(border);
         margin: 2em 0 2em 0;
     }
 
     blockquote {
-        border-left: solid 0.5em #eae9e9;
+        border-left: solid 0.5em _palette(border);
         padding: 1em 0 1em 2em;
         font-style: italic;
     }
