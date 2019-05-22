@@ -12,7 +12,7 @@
 
     body {
         background-color: _palette(bg);
-        background-image: linear-gradient(rgba(25, 45, 60, 0.6), rgba(25, 45, 60, 0.6)), url('../images/bg-1.jpg');
+        background-image: linear-gradient(rgba(25, 45, 60, 0.7), rgba(25, 45, 60, 0.7)), url('../images/bg-1.jpg');
         background-repeat: no-repeat, no-repeat;
         background-size: auto, cover;
         background-position: center 0, center 0;
@@ -83,13 +83,13 @@
 
     a {
         @include vendor('transition', ('border-color 0.35s ease-in-out', 'color 0.35s ease-in-out'));
-        color: _palette(accent);
-        text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
+        color: _palette(accent-light);
+        text-shadow: 0 0 0.5px _palette(accent);
         text-decoration: none;
-        border-bottom: dotted 1px _palette(border);
+        border-bottom: dotted 1px _palette(accent-light);
 
         &:hover {
-            border-bottom-color: _palette(accent-light);
+            border-bottom-color: _palette(accent);
         }
     }
 

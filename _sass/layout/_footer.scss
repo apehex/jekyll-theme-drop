@@ -18,14 +18,14 @@
     }
 
     a {
-        color: _palette(accent);
-        text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
-        border-bottom-color: _palette(accent);
+        color: _palette(accent-light);
+        text-shadow: 0 0 0.5px _palette(accent-light);
+        border-bottom-color: _palette(accent-light);
 
         &:hover {
-            color: _palette(accent-light);
-            text-shadow: 0 0 0.5px rgba(69, 200, 159, 0.25);
-            border-bottom-color: _palette(accent-light);
+            color: _palette(accent);
+            text-shadow: 0 0 0.5px _palette(accent);
+            border-bottom-color: _palette(accent);
         }
     }
 
