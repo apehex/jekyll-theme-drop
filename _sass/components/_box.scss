@@ -10,7 +10,6 @@
         display: block;
         position: absolute;
         top: -9em;
-        left: 50%;
         height: 9em;
         border-left: solid 1px _palette(accent);
     }
@@ -21,7 +20,6 @@
         width: 90px;
         height: 66px;
         position: absolute;
-        left: 50%;
         top: -4.5em;
         margin-left: -45px;
         margin-top: -33px;
@@ -30,6 +28,18 @@
 
     :last-child {
         margin-bottom: 0;
+    }
+
+    &.right {
+        &:before, &:after {
+            left: 3em;
+        }
+    }
+
+    &.left {
+        &:before, &:after {
+            right: 3em;
+        }
     }
 
     &.style1 {
@@ -160,13 +170,12 @@
         }
 
         h2 {
-            position: absolute;
+            position: relative;
             z-index: 10;
-            top: 0;
         }
 
         p {
-            position: absolute;
+            position: relative;
             z-index: 10;
         }
 
@@ -176,7 +185,7 @@
             width: 100%;
             height: auto;
             overflow: hidden;
-            padding: 2em;
+            padding: 0;
             margin: 0;
         }
 
@@ -205,10 +214,14 @@
 
             h2 {
                 left: 0;
+                margin-left: 2.4em;
+                padding-left: 0.5em;
+                border-left: solid 1px _palette(bg);
             }
 
             p {
                 right: 0;
+                margin-left: 12em;
             }
         }
 
@@ -219,6 +232,9 @@
 
             h2 {
                 right: 0;
+                margin-right: 2.4em;
+                padding-right: 0.5em;
+                border-right: solid 1px _palette(bg);
             }
 
             p {
