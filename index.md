@@ -9,15 +9,11 @@ subtitle: by apehex
         <div class="upper">
             {% include bouncing.svg alignment="xMinYMax" width="12em" height="3em" view-box="120 0 240 60" fill="#182d3a" opacity="1" %}
             <h2>{{ drop.name }}</h2>
-            <p>
-                {{ drop.drop | markdownify }}
-            </p>
+            <p>{{ drop.drop }}</p>
         </div>
         <div class="lower">
             {% include bouncing.svg alignment="xMinYMin" width="12em" height="3em" view-box="120 60 240 60" fill="#00ffff" opacity="1" %}
-            <p>
-                {{ drop.water | markdownify }}
-            </p>
+            <p>{{ drop.water }}</p>
         </div>
     </a>
 </article>
