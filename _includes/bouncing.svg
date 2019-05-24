@@ -7,9 +7,10 @@
    xmlns="http://www.w3.org/2000/svg"
    id="svg4709"
    version="1.1"
-   viewBox="{{ include.view-box }}"
-   height="{{ include.height }}"
+   preserveAspectRatio="{{ include.alignment }} meet"
    width="{{ include.width }}"
+   height="{{ include.height }}"
+   viewBox="{{ include.view-box }}"
    fill="{{ include.fill }}"
    fill-opacity="{{ include.opacity }}">
   <defs
