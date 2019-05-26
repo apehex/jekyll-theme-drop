@@ -51,43 +51,44 @@
 	// Parallax background.
 
 		// Disable parallax on IE/Edge (smooth scrolling is jerky), and on mobile platforms (= better performance).
-			if (browser.name == 'ie'
-			||	browser.name == 'edge'
-			||	browser.mobile)
-				settings.parallax = false;
+		settings.parallax = false;
+		// if (browser.name == 'ie'
+		// 	||	browser.name == 'edge'
+		// 	||	browser.mobile)
+		// 		settings.parallax = false;
 
-		if (settings.parallax) {
+		// if (settings.parallax) {
 
-			var $dummy = $(), $bg;
+		// 	var $dummy = $(), $bg;
 
-			$window
-				.on('scroll.overflow_parallax', function() {
+		// 	$window
+		// 		.on('scroll.overflow_parallax', function() {
 
-					// Adjust background position.
-						$bg.css('background-position', 'center ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
+		// 			// Adjust background position.
+		// 				$bg.css('background-position', 'center ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
 
-				})
-				.on('resize.overflow_parallax', function() {
+		// 		})
+		// 		.on('resize.overflow_parallax', function() {
 
-					// If we're in a situation where we need to temporarily disable parallax, do so.
-						if (breakpoints.active('<=narrow')) {
+		// 			// If we're in a situation where we need to temporarily disable parallax, do so.
+		// 				if (breakpoints.active('<=narrow')) {
 
-							$body.css('background-position', '');
-							$bg = $dummy;
+		// 					$body.css('background-position', '');
+		// 					$bg = $dummy;
 
-						}
+		// 				}
 
-					// Otherwise, continue as normal.
-						else
-							$bg = $body;
+		// 			// Otherwise, continue as normal.
+		// 				else
+		// 					$bg = $body;
 
-					// Trigger scroll handler.
-						$window.triggerHandler('scroll.overflow_parallax');
+		// 			// Trigger scroll handler.
+		// 				$window.triggerHandler('scroll.overflow_parallax');
 
-				})
-				.trigger('resize.overflow_parallax');
+		// 		})
+		// 		.trigger('resize.overflow_parallax');
 
-		}
+		// }
 
 	// Poptrox.
 		$('.gallery').poptrox({
