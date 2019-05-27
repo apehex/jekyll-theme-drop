@@ -46,4 +46,20 @@ button,
             background: rgba(58, 57, 57, 0.025);
         }
     }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 32px;
+        position: absolute;
+        left: 0;
+        bottom: -32px;
+        padding-left: auto;
+        padding-right: auto;
+        z-index: 100;
+        background-image: url('images/falling.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
 }
