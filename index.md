@@ -4,7 +4,7 @@ title: DROP
 subtitle: by apehex
 ---
 {% for drop in site.drops %}
-<article class="container box right style4">
+<article {% if forloop.index == 1 %} id="first" {% endif %} class="container box right style4">
     <a href="{{ drop.url }}">
         <div class="upper">
             {% include bouncing.svg alignment="xMinYMax" width="12em" height="3em" view-box="120 0 240 60" fill="#182d3a" opacity="1" %}
