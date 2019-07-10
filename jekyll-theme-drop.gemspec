@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["apehex@protonmail.com"]
 
   spec.summary       = "A Jekyll template on the theme of falling drops."
-  spec.homepage      = "https://github.com/apehex/jekyll-theme-overflow"
+  spec.homepage      = "https://github.com/apehex/jekyll-theme-drop"
   spec.license       = "CC-BY-4.0"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
