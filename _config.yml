@@ -37,6 +37,8 @@ collections:
   redirects:
     output: true
     permalink: /:path/
+  drops:
+    output: true
 
 # Default settings
 defaults:
@@ -46,11 +48,6 @@ defaults:
     values:
       layout: "redirect"
 
-# Collections
-collections:
-  drops:
-    output: true
-
 # Build settings
 permalink: pretty
 markdown: kramdown
@@ -59,7 +56,7 @@ sass:
 
 # Publication settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://apehex.github.io/jekyll-theme-drop" # the base hostname & protocol for your site, e.g. http://example.com
 author: apehex
 copyright_holder: Untitled
 
