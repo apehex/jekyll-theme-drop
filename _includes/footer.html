@@ -34,6 +34,8 @@
             <li>&copy; {{ site.title }}. All rights reserved.</li>
             <li>Design: <a href="http://github.com/apehex" target="_blank">apehex</a></li>
             <li>Inspired by: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+            {% if site.privacy_policy_url %}<li><a href="{{ site.privacy_policy_url | absolute_url }}" target="_blank">Privacy Policy</a></li>{% endif %}
+            {% if site.legal_terms_url %}<li><a href="{{ site.legal_terms_url | absolute_url }}" target="_blank">Legal Terms</a></li>{% endif %}
         </ul>
     </div>
 </section>
