@@ -1,7 +1,7 @@
 ---
 ---
 {% assign lang = page.lang | default: site.lang | default: 'en' %}
-{% assign menu = site.data.translations.menu[page.menu] %}
+{% assign menu = site.data.translations.menu[page.menu][lang] %}
 
 <!DOCTYPE HTML>
 <!--
