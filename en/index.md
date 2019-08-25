@@ -1,5 +1,6 @@
 ---
 layout: home
+lang-ref: home-page
 title: DROP
 subtitle: by apehex
 ---

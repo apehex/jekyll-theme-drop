@@ -1,5 +1,6 @@
 ---
 layout: page
+lang-ref: privacy-policy-page
 title: Privacy Policy
 ---
 # Privacy Policy
