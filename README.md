@@ -6,6 +6,18 @@ You can preview the theme [here](https://apehex.github.io/jekyll-theme-drop)
 
 ![Drop Theme](assets/images/screenshot.jpg "Drop Theme")
 
+# Features
+
+> **Responsive**: out of the box support for all screen sizes, be it smartphones, laptops, tablets...
+
+> **Multilingual**: easily manage pages, menu, url, dates, sitemap in several languages
+
+> **Customizable**: theme colors, menu, social items can be changed from a central config file
+
+> **GDPR ready**: bundled with a cookie consent plugin and a boilerplate privacy policy compliant with GDPR
+
+> **SEO ready**: sitemap, robots.txt and tags are automatically generated for the website
+
 # Installation
 
 Add this line to your Jekyll site's `Gemfile`:
@@ -51,7 +63,7 @@ Your contact information can be used in contact forms, the footer or anywhere el
 
 ## Publication
 
-### On Github Pages
+### On Github Pages
 
 In your own website's repository, edit the `_config.yml` file:
 
@@ -84,7 +96,7 @@ And finally push to github
 
     $ git push --u origin gh-pages
 
-### On any server
+### On any server
 
 In your own website's directory, edit the `_config.yml` file:
 

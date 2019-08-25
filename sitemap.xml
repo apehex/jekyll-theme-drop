@@ -4,33 +4,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   
-  <url>
-    <loc>https://apehex.github.io/jekyll-theme-drop/elements/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-drop/elements/" />
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  
   
   <url>
     <loc>https://apehex.github.io/jekyll-theme-drop/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-drop/" />
+    
+    <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-drop/" />
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-drop/en/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-drop/fr/" />
+    
     <changefreq>weekly</changefreq>
   </url>
   
   
   
+  
   <url>
-    <loc>https://apehex.github.io/jekyll-theme-drop/legal-terms/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-drop/legal-terms/" />
+    <loc>https://apehex.github.io/jekyll-theme-drop/en/elements/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-drop/en/elements/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-drop/fr/elements/" />
+    
     <changefreq>weekly</changefreq>
   </url>
   
   
   
+  
   <url>
-    <loc>https://apehex.github.io/jekyll-theme-drop/privacy-policy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-drop/privacy-policy/" />
+    <loc>https://apehex.github.io/jekyll-theme-drop/en/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-drop/" />
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-drop/en/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-drop/fr/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-drop/en/legal-terms/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-drop/en/legal-terms/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-drop/en/privacy-policy/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-drop/en/privacy-policy/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-drop/fr/elements/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-drop/en/elements/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-drop/fr/elements/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-drop/fr/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-drop/" />
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-drop/en/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-drop/fr/" />
+    
     <changefreq>weekly</changefreq>
   </url>
   
