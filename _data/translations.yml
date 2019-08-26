@@ -10,8 +10,8 @@ menu:
         url: /en/elements/
     fr:
       - title: Accueil
-        url: /en/
+        url: /fr/
       - title: Generique
-        url: /en/generic/
+        url: /fr/generique/
       - title: Eléments
-        url: /en/elements/
+        url: /fr/elements/
