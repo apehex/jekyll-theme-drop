@@ -3,11 +3,12 @@
 #header {
     @include vendor('transition', 'opacity 2s ease-in-out');
     position: relative;
+    margin: 0;
+    padding: 2em 0 14em 0;
+    height: 100vh;
     color: _palette(fg);
     text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
     text-align: center;
-    margin: 0;
-    padding: 2em 0 14em 0;
     cursor: default;
 
     header {
