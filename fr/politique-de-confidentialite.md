@@ -1,5 +1,5 @@
 ---
 layout: privacy-policy
 lang-ref: privacy-policy-page
-title: Privacy Policy
+title: Politique de Confidentialité
 ---
