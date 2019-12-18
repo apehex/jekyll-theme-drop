@@ -113,39 +113,5 @@ title: Elements
             </table>
         </div>
     </section>
-    <section>
-        <header>
-            <h3>Form</h3>
-        </header>
-        <form method="post" action="#">
-            <div class="row">
-                <div class="col-6 col-12-mobile">
-                    <input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />
-                </div>
-                <div class="col-6 col-12-mobile">
-                    <input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
-                </div>
-                <div class="col-12">
-                    <select name="department" id="department">
-                        <option value="">Choose a department</option>
-                        <option value="1">Manufacturing</option>
-                        <option value="2">Administration</option>
-                        <option value="3">Support</option>
-                    </select>
-                </div>
-                <div class="col-12">
-                    <input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
-                </div>
-                <div class="col-12">
-                    <textarea name="message" id="message" placeholder="Enter your message"></textarea>
-                </div>
-                <div class="col-12">
-                    <ul class="actions">
-                        <li><input type="submit" value="Submit" /></li>
-                        <li><input type="reset" class="style3" value="Clear Form" /></li>
-                    </ul>
-                </div>
-            </div>
-        </form>
-    </section>
+    {% include contact.html %}
 </article>
