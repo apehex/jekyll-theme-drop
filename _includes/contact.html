@@ -5,13 +5,13 @@
     <form method="post" action="#">
         <div class="row">
             <div class="col-6 col-12-mobile">
-                <input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />
+                <input class="text" type="text" name="contact-name" id="contact-name" value="" placeholder="John Doe" required minlength="4" maxlength="64" />
             </div>
             <div class="col-6 col-12-mobile">
-                <input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
+                <input class="text" type="email" name="contact-email" id="contact-email" value="" placeholder="johndoe@domain.tld" required minlength="8" maxlength="64" />
             </div>
             <div class="col-12">
-                <select name="department" id="department">
+                <select name="contact-department" id="contact-department">
                     <option value="">Choose a department</option>
                     <option value="1">Manufacturing</option>
                     <option value="2">Administration</option>
@@ -19,16 +19,16 @@
                 </select>
             </div>
             <div class="col-12">
-                <input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
+                <input class="text" type="text" name="contact-subject" id="contact-subject" value="" placeholder="Enter your subject" required minlength="4" maxlength="64" />
             </div>
             <div class="col-12">
-                <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+                <textarea name="contact-message" id="contact-message" placeholder="Enter your message" required minlength="16" maxlength="256" ></textarea>
             </div>
             <div class="col-12">
                 <ul class="actions">
                     <li><div id="recaptcha-checkbox" ></div></li>
-                    <li><input type="submit" value="Submit" /></li>
-                    <li><input type="reset" class="style3" value="Clear Form" /></li>
+                    <li><input type="submit" id="contact-submit-button" value="Submit" disabled /></li>
+                    <li><input type="reset" id="contact-reset-button" class="style3" value="Reset" /></li>
                 </ul>
             </div>
         </div>
