@@ -2,13 +2,13 @@
     <header>
         <h3>Form</h3>
     </header>
-    <form method="post" action="#">
+    <form id="{{ include.form_id | 'contact-form' }}" method="post" action="#" onsubmit="{{ include.onsubmit_callback | 'sendContactMessage' }}()" onreset="{{ include.onreset_callback | 'resetContactForm' }}()" >
         <div class="row">
             <div class="col-6 col-12-mobile">
-                <input class="text" type="text" name="contact-name" id="contact-name" value="" placeholder="John Doe" required minlength="4" maxlength="64" />
+                <input class="text" type="text" name="{{ include.name_input_id | 'contact-name' }}" id="{{ include.name_input_id | 'contact-name' }}" value="" placeholder="John Doe" required minlength="4" maxlength="64" />
             </div>
             <div class="col-6 col-12-mobile">
-                <input class="text" type="email" name="contact-email" id="contact-email" value="" placeholder="johndoe@domain.tld" required minlength="8" maxlength="64" />
+                <input class="text" type="email" name="{{ include.email_input_id | 'contact-email' }}" id="{{ include.email_input_id | 'contact-email' }}" value="" placeholder="johndoe@domain.tld" required minlength="8" maxlength="64" />
             </div>
             <div class="col-12">
                 <select name="contact-department" id="contact-department">
@@ -19,16 +19,16 @@
                 </select>
             </div>
             <div class="col-12">
-                <input class="text" type="text" name="contact-subject" id="contact-subject" value="" placeholder="Enter your subject" required minlength="4" maxlength="64" />
+                <input class="text" type="text" name="contact-subject" id="contact-subject" value="" placeholder="Enter your subject" />
             </div>
             <div class="col-12">
-                <textarea name="contact-message" id="contact-message" placeholder="Enter your message" required minlength="16" maxlength="256" ></textarea>
+                <textarea name="{{ include.message_input_id | 'contact-message' }}" id="{{ include.message_input_id | 'contact-message' }}" placeholder="Enter your message" required minlength="16" maxlength="256" ></textarea>
             </div>
             <div class="col-12">
                 <ul class="actions">
-                    <li><div id="recaptcha-checkbox" ></div></li>
-                    <li><input type="submit" id="contact-submit-button" value="Submit" disabled /></li>
-                    <li><input type="reset" id="contact-reset-button" class="style3" value="Reset" /></li>
+                    <li><div id="{{ include.recaptcha_widget_id | 'recaptcha-checkbox' }}" ></div></li>
+                    <li><input type="submit" id="{{ include.submit_input_id | 'contact-submit-button' }}" value="Submit" disabled /></li>
+                    <li><input type="reset" id="{{ include.reset_input_id | 'contact-reset-button' }}" class="style3" value="Reset" /></li>
                 </ul>
             </div>
         </div>
