@@ -2,9 +2,10 @@
 layout: page
 lang-ref: elements-page
 title: Elements
+subtitle: Showcase
 ---
 <!-- Elements -->
-<article class="container box style3">
+<article class="container right box style3">
     <header>
         <h2>Generic Box</h2>
         <p>Just a generic box. Nothing to see here.</p>
@@ -42,6 +43,8 @@ title: Elements
         tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
         posuere cubilia.</p>
     </section>
+</article>
+<article class="container left box style3">
     <section>
         <header>
             <h3>Unordered List</h3>
