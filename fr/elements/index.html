@@ -1,4 +1,22 @@
-<!-- Elements -->
+<!DOCTYPE HTML>
+<!--
+    Drop theme by apehex
+    https://github.com/apehex
+    Free for personal and commercial use under the CCA 4.0 license
+-->
+<html lang="fr">
+    
+    <head>
+    <title>Elements - </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-drop/assets/css/styles.css" /><link rel="alternate" hreflang="en" href="/en/elements/" /><link rel="alternate" hreflang="fr" href="/fr/elements/" /><noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-drop/assets/css/noscript.css" /></noscript>
+</head>
+
+
+    <body class="is-preload">
+
+        <!-- Elements -->
 <article class="container box style3">
     <header>
         <h2>Encart Générique</h2>
@@ -109,38 +127,141 @@
         </div>
     </section>
     <section>
-        <header>
-            <h3>Form</h3>
-        </header>
-        <form method="post" action="#">
-            <div class="row">
-                <div class="col-6 col-12-mobile">
-                    <input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />
-                </div>
-                <div class="col-6 col-12-mobile">
-                    <input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
-                </div>
-                <div class="col-12">
-                    <select name="department" id="department">
-                        <option value="">Choose a department</option>
-                        <option value="1">Manufacturing</option>
-                        <option value="2">Administration</option>
-                        <option value="3">Support</option>
-                    </select>
-                </div>
-                <div class="col-12">
-                    <input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
-                </div>
-                <div class="col-12">
-                    <textarea name="message" id="message" placeholder="Enter your message"></textarea>
-                </div>
-                <div class="col-12">
-                    <ul class="actions">
-                        <li><input type="submit" value="Submit" /></li>
-                        <li><input type="reset" class="style3" value="Clear Form" /></li>
-                    </ul>
-                </div>
+    <header>
+        <h3>Form</h3>
+    </header>
+    <form id="contact-form" method="post" action="#" onsubmit="sendContactMessage()" onreset="resetContactForm()">
+        <div class="row">
+            <div class="col-6 col-12-mobile">
+                <input class="text" type="text" name="contact-name" id="contact-name" value="" placeholder="John Doe" required="" minlength="4" maxlength="64" />
             </div>
-        </form>
-    </section>
+            <div class="col-6 col-12-mobile">
+                <input class="text" type="email" name="contact-email" id="contact-email" value="" placeholder="johndoe@domain.tld" required="" minlength="8" maxlength="64" />
+            </div>
+            <div class="col-12">
+                <select name="contact-department" id="contact-department">
+                    <option value="">Choose a department</option>
+                    <option value="1">Manufacturing</option>
+                    <option value="2">Administration</option>
+                    <option value="3">Support</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <input class="text" type="text" name="contact-subject" id="contact-subject" value="" placeholder="Enter your subject" />
+            </div>
+            <div class="col-12">
+                <textarea name="contact-message" id="contact-message" placeholder="Enter your message" required="" minlength="16" maxlength="256"></textarea>
+            </div>
+            <div class="col-12">
+                <ul class="actions">
+                    <li><div id="recaptcha-checkbox"></div></li>
+                    <li><input type="submit" id="contact-submit-button" value="Submit" disabled="" /></li>
+                    <li><input type="reset" id="contact-reset-button" class="style3" value="Reset" /></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</section>
+
+
+<script type="text/javascript">
+    const contactFormElement = document.getElementById("contact-form");
+    const nameInputElement = document.getElementById("contact-name");
+    const emailInputElement = document.getElementById("contact-email");
+    const messageInputElement = document.getElementById("contact-message");
+    const submitInputElement = document.getElementById("contact-submit-button");
+    var recaptchaWidget;
+
+    const isInputValid = function() {
+        return (nameInputElement.checkValidity()
+            && emailInputElement.checkValidity()
+            && messageInputElement.checkValidity())
+    };
+    
+    const isRecaptchaValid = function() {
+        var responseToken = grecaptcha.getResponse(recaptchaWidget);
+        return true;
+    };
+
+    const disableSubmitInputElement = function (disabled = true) {
+        submitInputElement.disabled = disabled;
+    }
+
+    const resetContactForm = function() {
+        contactFormElement.reset();
+        disableSubmitInputElement();
+    };
+    
+    const sendContactMessage = function() {
+        encodeURIComponent(nameInputElement.value);
+        encodeURIComponent(emailInputElement.value);
+        encodeURIComponent(messageInputElement.value);
+    };
+    
+    var onloadCallback = function() {
+        var verifyForm = function(response) {
+            if (isInputValid() && isRecaptchaValid()) {
+                disableSubmitInputElement(false);
+            } else {
+                disableSubmitInputElement();
+            }
+        };
+        recaptchaWidget = grecaptcha.render('recaptcha-checkbox', {
+            'sitekey' : '6Lf-dcgUAAAAALscaYWvP7j9MCGYseXx_z8js1eb',
+            'theme' : 'dark',
+            'callback' : verifyForm,
+            'expired-callback': disableSubmitInputElement,
+            'size' : 'compact'
+        });
+    };
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer=""></script>
+
+
 </article>
+
+
+        <!-- Footer -->
+<section id="footer">
+    <ul class="icons"><li><a href="https://github.com/apehex" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li><li><a href="https://github.com/apehex" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li><li><a href="https://github.com/apehex" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li><li><a href="https://github.com/apehex" class="icon alt fa-pinterest" target="_blank"><span class="label">Pinterest</span></a></li><li><a href="https://github.com/apehex" class="icon alt fa-500px" target="_blank"><span class="label">500px</span></a></li><li><a href="https://github.com/apehex" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li><li><a href="https://github.com/apehex" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li><li><a href="https://github.com/apehex" class="icon alt fa-slack" target="_blank"><span class="label">Slack</span></a></li><li><a href="https://github.com/apehex" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li></ul>
+    <div class="copyright">
+        <ul class="menu">
+            <li>&copy; Drop. All rights reserved.</li>
+            <li>Design: <a href="http://github.com/apehex" target="_blank">apehex</a></li>
+            <li>Inspired by: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li><li><a href="https://apehex.github.io/jekyll-theme-drop/en/privacy-policy/" target="_blank">Privacy Policy</a></li><li><a href="https://apehex.github.io/jekyll-theme-drop/en/legal-terms/" target="_blank">Legal Terms</a></li></ul>
+    </div>
+</section>
+
+        <!-- Scripts -->
+<script src="https://apehex.github.io/jekyll-theme-drop/assets/js/jquery.min.js"></script>
+<script src="https://apehex.github.io/jekyll-theme-drop/assets/js/jquery.scrolly.min.js"></script>
+<script src="https://apehex.github.io/jekyll-theme-drop/assets/js/jquery.poptrox.min.js"></script>
+<script src="https://apehex.github.io/jekyll-theme-drop/assets/js/browser.min.js"></script>
+<script src="https://apehex.github.io/jekyll-theme-drop/assets/js/breakpoints.min.js"></script>
+<script src="https://apehex.github.io/jekyll-theme-drop/assets/js/util.js"></script>
+<script src="https://apehex.github.io/jekyll-theme-drop/assets/js/main.js"></script>
+<script src="https://apehex.github.io/jekyll-theme-drop/assets/js/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+	"palette": {
+		"popup": {
+			"background": "#252e39"
+		},
+		"button": {
+			"background": "#14a7d0"
+		}
+	}
+});
+</script>
+<script src="https://apehex.github.io/jekyll-theme-drop/assets/js/simple-jekyll-search.min.js" type="text/javascript"></script>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('search-results'),
+  json: "https://apehex.github.io/jekyll-theme-drop/index.json"
+})
+</script>
+
+
+    </body>
+</html>
